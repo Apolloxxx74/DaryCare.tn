@@ -22,7 +22,7 @@ MarkupSafe==3.0.2
 mysql==0.0.3
 mysqlclient==2.2.7
 packaging==24.2
-PIL-Tools @ file:///C:/Users/asus/Downloads/PIL_Tools-1.1.0-py3-none-any.whl#sha256=2a117584cf313478939a890b83b82658a1c2b23bc066b76e2fe552d9b4c75ab6
+Pillow
 pillow==11.0.0
 pip-tools==7.4.1
 pip_and_pip_tools @ file:///C:/Users/asus/Downloads/pip_and_pip_tools-7.0.0-py2.py3-none-any.whl#sha256=500473b261cff7dde48481757aa825cff9a5a4fa1d9ab24c4fe1f91372e892bd
