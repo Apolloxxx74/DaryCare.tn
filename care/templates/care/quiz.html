@@ -1,0 +1,62 @@
+﻿{% extends "care/index.html" %}
+{% load static %}
+{% block body %}
+
+<section>
+                <div class="middle">
+                    <h1 class="span">Antécédants <span>Médicaux</span></h1>               
+                </div>
+
+        <div class="form-container">
+            <form action="">
+                <div class="labels">
+                    <label for="cardio">Antécédants Cardio-vasculaires
+                        <input type="checkbox" id="cardio">
+                    </label>
+                </div>
+                <div class="labels">
+                    <label for="diabete">Antécédants Diabétiques
+                        <input type="checkbox" id="diabete">
+                    </label>
+                </div>
+                <div class="labels">
+                    <label for="chirurgical">Antécédants Chirurgicales
+                        <input type="checkbox" id="chirurgical">
+                    </label>
+                </div>
+                <div class="labels">
+                    <label for="allergie">Antécédants Allérgiques
+                        <input type="checkbox" id="allergie">
+                    </label>
+                </div>
+                <div class="labels">
+                    <label for="autres">Autres Antécédants
+                        <input type="checkbox" id="autres">
+                    </label>
+                </div>
+                <div class="zebi">
+                        <input class="btn btn-primary" type="submit" value="Confirmer">
+                </div>   
+            </form>
+        </div>
+
+                        
+      <div>
+
+    
+
+
+
+
+
+</section>
+   
+
+
+
+
+
+
+
+<link rel="stylesheet" href="{% static 'care/quiz.css' %}">
+{% endblock %}

@@ -1,0 +1,32 @@
+﻿{% extends "care/index.html" %}
+{% load static %}
+{% block body %}
+<section>
+    <h2>Espace Patient</h2>
+
+    <form action="{% url 'espace_patient' %}" method="post">
+        {% csrf_token %}
+        
+        <div class="form-group">
+            <input class="form-control" type="text" name="prenom" placeholder="Prénom">
+        </div>
+        
+        <div class="form-group">
+            <input class="form-control" type="text" name="Nom_de_la_famille" placeholder="Nom de la famille">
+        </div>
+        
+        <div class="form-group">
+            <input class="form-control" type="tel" name="telephone" placeholder="Numéro du téléphone" pattern="[0-9]{8,15}" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="date" name="date" placeholder="Date De Naissance">
+        </div>
+
+        <input class="btn btn-primary" type="submit" value="Confirmer">
+    </form>
+
+
+</section>
+
+<link rel="stylesheet" href="{% static 'care/espace_patient.css' %}">
+{% endblock %}

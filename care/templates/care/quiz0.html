@@ -1,0 +1,81 @@
+﻿{% extends "care/index.html" %}
+{% load static %}
+{% block body %}
+
+<section>
+                <div class="middle">
+                    <h1 class="span">Traitements <span>En Cours</span></h1>               
+                </div>
+
+        <div class="form-container">
+            <form action="">
+                <div class="labels">
+                    <label for="Antihypertenseurs">Antihypertenseurs(Tareg , Amlot , Lopril )
+                        <input type="checkbox" id="Antihypertenseurs">
+                    </label>
+                </div>
+                <div class="labels">
+                    <label for="Anti-inflammatoires">Anti-inflammatoires(Inflamyl , Hydrocortisone )
+                        <input type="checkbox" id="Anti-inflammatoires">
+                    </label>
+                </div>
+                <div class="labels">
+                    <label for="Antibiotiques">Antibiotiques(Augmentin , Clamoxyl )
+                        <input type="checkbox" id="Antibiotiques">
+                    </label>
+                </div>
+                <div class="labels">
+                    <label for="Anticoagulants">Anticoagulants(Kardegic  , Sintrom )
+                        <input type="checkbox" id="Anticoagulants">
+                    </label>
+                </div>
+                <div class="labels">
+                    <label for="Antidiabétiques">Antidiabétiques(Glucophage , Diamicron , Insuline )
+                        <input type="checkbox" id="Antidiabétiques">
+                    </label>
+                </div>
+                 <div class="labels">
+                    <label for="Laxatifs">Laxatifs(Duphalac , Lactulose )
+                        <input type="checkbox" id="Laxatifs">
+                    </label>
+                </div>
+                 <div class="labels">
+                    <label for="Médicaments de Thyroïde">Médicaments de Thyroïde(Levothyrox ,Thiamazole )
+                        <input type="checkbox" id="Médicaments de Thyroïde">
+                    </label>
+                </div>
+                 <div class="labels">
+                    <label for="Compléments alimentaires / vitamines">Compléments alimentaires / vitamines 
+                        <input type="checkbox" id="Compléments alimentaires / vitamines">
+                    </label>
+                </div>
+
+
+
+
+                <div class="zebi">
+                        <input class="btn btn-primary" type="submit" value="Confirmer">
+                </div>   
+            </form>
+        </div>
+
+                        
+      <div>
+
+    
+
+
+
+
+
+</section>
+   
+
+
+
+
+
+
+
+<link rel="stylesheet" href="{% static 'care/quiz0.css' %}">
+{% endblock %}

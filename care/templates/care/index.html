@@ -1,0 +1,49 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html  lang="en" class="no-scrollbar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>DaryCare</title>
+    <link rel="stylesheet" href="{% static 'care/index.css' %}">
+    <link href="https://fonts.cdnfonts.com/css/harlow-solid-italic" rel="stylesheet">
+                                
+</head>
+<body >
+    <header>     
+        
+        </nav>
+        <img src="{% static 'care/care.jpg' %}" alt="" id="logo-jpg">
+        <nav>                           
+            <a href="http://127.0.0.1:8000/" class="nav-item" id="">DaryCare</a>
+            <a href="http://127.0.0.1:8000/services/" class="nav-item" id="educationlink">Services</a>
+            <a href="http://127.0.0.1:8000/espace_patient/" class="nav-item" id="contactlink">Espace Patient</a>
+            <a href="http://127.0.0.1:8000/espace_infirmier/"class="nav-item"  id="serviceslink">Espace Infirmier</a>
+            <a id="l" class="nav-item" href="http://127.0.0.1:8000/login/">Se Connecter</a>
+            <a id="r" class="nav-item" href="http://127.0.0.1:8000/register/">S’inscrire </a>
+           <a href="" class="nav-item"> {% if user.is_authenticated %}
+                <strong style="color:#eccdae">{{ user.username }}</strong><strong style="color: green;"> Online</strong>
+            {% else %}
+                <strong style="color: red;">Offline</strong>
+            {% endif %}
+        </a> 
+           
+        </nav>
+    </header>
+     {% block body %}
+    
+   
+   
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'care/index.js' %}">  
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&display=swap" rel="stylesheet">
+ 
+    
+ 
+</body>
+</html>
+
+
+    

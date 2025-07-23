@@ -1,0 +1,82 @@
+﻿{% extends "care/index.html" %}
+{% load static %}
+{% block body %}
+<section>
+        <div class="middle">
+            <h1 class="span">Espace <span>Infirmier</span></h1>               
+        </div>
+
+            <div class="form-container">
+                <form action="{% url 'espace_infirmier' %}" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-group" id="field">
+                        <label for="experience">Genre</label>
+                        <select class="form-control" name="Experience" id="experience" required>
+                            <option value="">  Choisisir </option>
+                            <option value="1">Homme</option>
+                            <option value="2-3">Femme</option>
+                        </select>
+                    </div>
+                    <!-- Experience -->
+                    <div class="form-group" id="field">
+                        <label for="experience">Expérience</label>
+                        <select class="form-control" name="Experience" id="experience" required>
+                            <option value="">  Choisisir </option>
+                            <option value="1">Débutant (1 an)</option>
+                            <option value="2-3">Intermédiaire (2-5 ans)</option>
+                            <option value="7-10">Expert (5-10 ans)</option>
+                        </select>
+                    </div>
+
+                    <!-- Localization -->
+                    <div class="form-group" id="field">
+                        <label for="localisation">Localisation (Tunisie)</label>
+                        <select class="form-control" name="localisation" id="localisation" required>
+                            <option value="">  Choisisir </option>
+                            <option value="1">Kairouan</option>
+                            <option value="2-3">Sousse</option>
+                            <option value="4-6">Monastir</option>
+                            <option value="7-10">Mehdia</option>
+                        </select>            
+                    </div>
+
+                    <!-- Institut -->
+                    <div class="form-group"id="field">
+                        <label for="Institut">Nom de l'Institut</label>
+                        <select class="form-control" name="localisation" id="localisation" required>
+                            <option value="">  Choisisir </option>
+                            <option value="1">Institut Supérieur des Sciences Infirmières de Sousse (ISSISo)</option>
+                            <option value="7-10">Institut Supérieur des Sciences Infirmières de Sfax (ISSIS)</option>
+                            <option value="7-10">Institut Supérieur des Sciences Infirmières de Tunis (ISSIT)</option>
+                            <option value="2-3">UPSAT Sousse</option>
+                            <option value="2-3">UPSAT Tunis</option>
+                            <option value="2-3">UPSAT Sfax</option>
+                            <option value="4-6">Institut Supérieur des Sciences Infirmières de Sousse (ISIS)</option>
+                            <option value="7-10">Institut Supérieur Privé des Sciences Infirmières EL AMED Sousse</option>
+                            <option value="7-10">Institut supérieur privé des sciences infirmières de Kairouan (ISPSIK)</option>
+                            
+                            
+                        </select>   
+                    </div>
+
+                    <!-- Diploma Upload -->
+                    <div class="form-group"id="field">
+                        <label for="diplome">Diplôme</label>
+                        <input class="form-control" type="file" name="diplome" id="diplome" accept=".pdf,.jpg,.jpeg,.png" required>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="form-group">
+                        <input class="btn btn-primary" type="submit" value="Confirmer">
+                    </div>
+                </form>
+            </div>
+
+
+    
+
+
+</section>
+
+<link rel="stylesheet" href="{% static 'care/infirmier0.css' %}">
+{% endblock %}

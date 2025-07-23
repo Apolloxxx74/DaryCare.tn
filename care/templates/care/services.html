@@ -1,0 +1,43 @@
+﻿{% extends "care/index.html" %}
+{% load static %}
+{% block body %}
+<section class="home">
+    <div class="middle">           
+        <div class="home-content">
+                <h1 class="span"><span>Services</span></h1>
+        </div>
+    </div>   
+    <div class="card">
+            <div>
+               <img src="{% static 'care/patient.jpg' %}" alt="patient" class="espace-img" id="patient">
+                <p id="br">Espace Patient</p>  
+            </div>
+                       
+            <div class="card__content" >
+                <h3>Espace Patient</h3>
+                <div>
+                    <p>Demandeur de soins ?</p>
+                </div>
+                    <a href="http://127.0.0.1:8000/espace_patient/
+                            "><button>Continuer</button> </a> 
+                    </div>
+        </div> 
+     <div class="card">
+            <div id="div">
+                <img src="{% static 'care/nurse.jpg' %}" alt="Infirmier" class="espace-img" id="nurse">
+                <p id="br1">Espace Infirmier</p>  
+            </div>
+            <div class="card__content">
+                <h3>Espace Infirmier</h3>
+                <div>
+                    <p>Êtes-vous infirmier / infirmière ?</p>
+                </div>
+                    <a href="http://127.0.0.1:8000/espace_infirmier/
+                    "><button>Continuer</button> </a>      
+                
+            </div>
+            
+    </div>
+</section>
+<link rel="stylesheet" href="{% static 'care/services.css' %}">
+{% endblock %}
